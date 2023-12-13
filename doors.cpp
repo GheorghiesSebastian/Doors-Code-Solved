@@ -39,10 +39,12 @@ int main(void) {
 		for (auto v : gamma)
 			++counts[v];
 		for (auto const& p : counts) {
-			if (p.second % 2 == 1)
+			if (p.second % 2 == 1) {
 				openDoors += 1;
+			}
 		}
 		cout << openDoors;
+		openDoors = 0;
 	}
 	return 0;
 }
